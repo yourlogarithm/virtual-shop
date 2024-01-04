@@ -1,0 +1,16 @@
+{
+  "name": "virtual-shop",
+  "version": "1.0.0",
+  "description": "Yet another mandatory useless university project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vlad-Sebastian Cretu",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5"
+  }
+}

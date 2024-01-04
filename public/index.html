@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Management System</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Shop Management System</h1>
+
+    <h2>View Data</h2>
+    <button onclick="viewTable('clients')">View Clients</button>
+    <button onclick="viewTable('products')">View Products</button>
+    <button onclick="viewTable('sales')">View Sales</button>
+    <div id="salesTable"></div>
+
+    <h2>Sell a Product</h2>
+    <form id="sellForm">
+        <input type="text" id="sell_cardNo" placeholder="Card Number" required>
+        <input type="number" id="sell_pid" placeholder="Product ID" required>
+        <input type="number" id="sell_qty" placeholder="Quantity" required>
+        <input type="date" id="sell_ts" required>
+        <button type="button" onclick="sellProduct()">Sell</button>
+    </form>
+
+    <!-- Section for Viewing Purchases (f) -->
+    <h2>View Purchases By Card Number</h2>
+    <input type="text" id="purchases_cardNo" placeholder="Card Number" required>
+    <button onclick="viewPurchases()">View Purchases</button>
+    <div id="purchasesTable"></div>
+
+    <!-- Section for Products Under Warranty (g) -->
+    <h2>View Products Under Warranty</h2>
+    <button onclick="viewUnderWarranty()">View Products</button>
+    <div id="underWarrantyTable"></div>
+
+    <!-- Section for Most Sold Product (h) -->
+    <h2>View Most Sold Product</h2>
+    <button onclick="viewMostSold()">View Product</button>
+    <div id="mostSoldTable"></div>
+
+    <!-- Section for Date with Most Sales (i) -->
+    <h2>View Date with Most Sales</h2>
+    <button onclick="viewDateMostSales()">View Date</button>
+    <div id="dateMostSalesTable"></div>
+
+    <!-- Section for Top Client (j) -->
+    <h2>View Top Client</h2>
+    <button onclick="viewTopClient()">View Client</button>
+    <div id="topClientTable"></div>
+</body>
+</html>
